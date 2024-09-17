@@ -8,7 +8,16 @@ Attempt at using ML to perform NHL fantasy drafts
 ## Conda Environment setup
 
 ```bash
-> conda create -n mlhl-env python=3.12
-> conda activate mlhl-env
-> conda install pytorch torchvision torchaudio cpuonly -c pytorch
+conda create -n mlhl-env python=3.12
+conda activate mlhl-env
+conda install pytorch torchvision torchaudio cpuonly -c pytorch
+```
+
+## More Deps
+
+### Scraping Dynamic Data
+```bash
+conda install selenium pandas
+python -m pip install webdriver-manager
+python -m pip install --upgrade selenium
 ```
