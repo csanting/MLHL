@@ -1,5 +1,5 @@
 # MLHL
-Attempt at using ML to perform NHL fantasy drafts
+Attempt at using ML and DL to perform NHL fantasy drafts
 
 
 ## Data Source
