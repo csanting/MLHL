@@ -10,25 +10,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # Function to scrape data from a single page with WebDriverWait
 def scrape_page_data(driver):
-    '''
-    # Wait until the table is present in the DOM
-    WebDriverWait(driver, 1).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "header")))
-    
     # Locate the table element
     table = driver.find_element(By.XPATH, '//*[@id="season-tabpanel"]/span/div/div[2]/table')
-
-    rows = table.find_elements(By.TAG_NAME, "tr")
-    
-    data = []
-    for row in rows:
-        columns = row.find_elements(By.TAG_NAME, "td")
-        row_data = [col.text for col in columns]
-        data.append(row_data)
-    '''
-
-    # Locate the table element
-    table = driver.find_element(By.XPATH, '//*[@id="season-tabpanel"]/span/div/div[2]/table')
-
     rows = table.find_elements(By.TAG_NAME, "tr")
     
     data = []
@@ -37,7 +20,6 @@ def scrape_page_data(driver):
         row_data = [col.text for col in columns]
         data.append(row_data)
     
-    return data
     return data
 
 # Initialize the WebDriver
