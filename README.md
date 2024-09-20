@@ -32,4 +32,11 @@ python -m pip install --upgrade selenium
 ```bash
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
 python -m pip install pytorch-forecasting
+conda install tensorboard
+```
+
+### Scikit-Learn Forecasting
+
+```bash
+conda install matplotlib scikit-learn
 ```
