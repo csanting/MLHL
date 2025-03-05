@@ -40,3 +40,9 @@ conda install tensorboard
 ```bash
 conda install matplotlib scikit-learn
 ```
+
+You can optinally install Jupyter to visualize the data (.ipynb to be uploaded shortly)
+
+```bash
+conda install jupyter
+```
